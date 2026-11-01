@@ -19,7 +19,7 @@ resource "google_compute_firewall" "cloudnotes_ingress" {
 
   allow {
     protocol = "tcp"
-    ports    = ["22", "80", "443", "5432"]
+    ports    = ["80", "443"]
   }
 
   source_ranges = ["0.0.0.0/0"]
